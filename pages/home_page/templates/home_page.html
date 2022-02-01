@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+
+{% block title %}
+דף הבית
+{% endblock %}
+
+{% block page_head_css %}
+    <link rel="stylesheet" href="{{ url_for('home_page.static', filename='css/home_page.css') }}"/>
+{% endblock %}
+
+{% block body %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/home_page/css/home_page.css">
+<script src="/home_page/js/gallery.js"></script>
+
+<div id="gridContainer" onload="setInterval()">
+    <div id="HP2" class="home_page_hero">
+        <div class="hero-text">
+            <h1> <b> ברוכים הבאים</b></h1>
+            <h2>דודי עיצוב שיער</h2>
+        </div>
+    </div>
+    <div class="about">
+        <img  id="S" src="/home_page/media/Scissors.png"  STYLE="float: left; margin-right:0px"/> <h1 id="title1">כל אחד יכול לגזור, אבל לא כל אחד יודע...</h1>
+        <h3> קצת עלינו...</h3>
+        <p> מספרה בלב מרכז תל אביב, שרות ויחס אישי מחירים אטרקטיביים ונוחים. ידע ונסיון של 20 שנה כולל הכשרות באקדמיות לעיצוב שיער מהמובילות בעולם היישר מבירות האופנה בעולם: פריז, לונדון ומילאנו</p>
+        <h3 >על המספרה</h3>
+        <p>בבוטיק שלנו תוכלו לקבל חוויה אמיתית של מספרה אולד סקול. תספורת לנשים ולגברים, עיצוב זקן או גילוח מפנק עם קצף חם, בר משקאות שמציע מגוון של סוגי קפה, משקאות קרים ומשקאות אלכוהוליים, פינות המתנה נעימות ומרגיעות וגם פינת עישון חיצונית.</p>
+        <h3><u>שעות פתיחה:</u></h3>
+        <p>ראשון - חמישי: 9:00-19:00
+            <br>  שישי: 9:00-14:00
+        </p>
+
+
+        <img  class="L" src="/home_page/media/תסספורת%20נשים.png"  STYLE="float: right; margin-left:10px"/> <h3 >תספורות נשים</h3>
+        <p>תסרוקות ואיפור ערב, גזירה בטכניקות חדשות, מומחיות בעולם התלתלים, החלקות, תוספות שיער, צבעים ועבודות כימיה מיוחדות...
+            <br>
+        </p>
+        <img  class="L" src="/home_page/media/תספורת%20גברים.png" STYLE="float: right; margin-left:10px"/> <h3 >תספורות גברים</h3>
+        <p>חשוב לנו שכל גבר יוכל להרשות לעצמו להגיע אלינו מתי שהוא רוצה ולא רק כשהוא חייב!
+            <br>  המוטו שלנו שתמיד תוכל להרשות לעצך להישאר מטופח, אסתטי ומסודר או בקיצור במיטבך
+        </p>
+        <img  class="L" src="/home_page/media/החלקה.png" STYLE="float: right; margin-left:10px"/> <h3>החלקת שיער</h3>
+        <p>בזכות הטכניקה והמקצועיות הגבוהה של המספרה, ותודות לחומרים האיכותיים שאנו משתמשים בהם בתהליך ההחלקה, השיער שלך יוותר מלא ברק, גמיש, רך ובעל תנועה טבעית
+        </p>
+        <img  class="L" src="/home_page/media/צבע%20לשיער.png" STYLE="float: right; margin-left:10px"/>  <h3>צביעת שיער</h3>
+        אנו מבצעים את כל סוגי הצביעה והגוונים תוך התאמת הטכניקה למרקם והפיגמנט של השערה. בזכות הדיוק בביצוע, השירות האישי והחומרים המתקדמים ביותר, תוכלי ליהנות מהגוון עליו את חולמת
+        </p>
+        </div>
+    <div class="slider" dir="ltr">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <input type="radio" name="radio-btn" id="radio5">
+
+            <div class="slide first">
+                <img src="/home_page/media/hc1.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="/home_page/media/hc2.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="/home_page/media/hc4.jfif" alt="">
+            </div>
+            <div class="slide">
+                <img src="/home_page/media/hc12.jpeg" alt="">
+            </div>
+            <div class="slide">
+                <img src="/home_page/media/hc3.jpg" alt="">
+            </div>
+
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+                <div class="auto-btn5"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{{ super() }}
+{% endblock %}
+
+{% block footer %}
+{{ super() }}
+{% endblock %}

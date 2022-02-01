@@ -1,0 +1,61 @@
+
+.about-section{
+    background: url(/about/media/HomePagePic8.jpg) no-repeat left;
+    background-size: 80%;
+    background-color: #e0ceb7;
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+.inner-container{
+    width: 62%;
+    opacity: 0.8;
+    float: right;
+    background-color: #fdfdfd;
+    border: 1px solid #545454 ;
+    padding: 20px;
+}
+
+.inner-container h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.text{
+    font-size: 13px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.skills{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+@media screen and (max-width:2000px){
+
+}
+
+@media screen and (max-width:800px){
+    .about-section{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:300px){
+    .about-section{
+        padding: 0;
+    }
+    .inner-container{
+        padding: 60px;
+    }
+}

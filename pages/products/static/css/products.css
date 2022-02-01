@@ -1,0 +1,246 @@
+
+#GridContainer{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-areas:
+    'main1 main2 main3'
+    'btn1 btn2 btn3'
+    'main4 main5 main6'
+    'btn4 btn5 btn6'
+    'main7 main8 main9'
+    'btn7 btn8 btn9';
+    background: url(/products/media/detailsBackground.jpg);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    overflow-radius: 25px;
+    height: 340px;
+    width: 100%;
+    border: 10px solid rgb(54, 53, 49);
+    border-radius: 25px;
+    grid-columns-gap: 75px;
+    grid-row-gap: 65px;
+}
+.Products{
+    display: grid;
+    height: 70px;
+    width: 90px;
+    margin: 42px;
+    padding: 90px;
+    font-size: 20px;
+    text-align: start;
+    border: 1px solid rgb(240, 223, 137);
+    border-radius: 25px;
+    box-shadow: 1px 1px;
+}
+.buttons{
+    display: grid;
+    position: relative;
+    left: 41px;
+    height: 25px;
+    width: 150px;
+    margin: 100px;
+    background: linear-gradient(rgba(0.1, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(/products/media/button.jpg)
+    font-size: 15px;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid black;
+    box-shadow: 1px 1px;
+}
+.ProductInfo {
+    display: grid;
+    position: relative;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(/products/media/ProductDetailsBackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 90px;
+    margin: 42px;
+    padding: 90px;
+    border-radius: 10px;
+    border: 1px solid rgb(240, 223, 137);
+    box-shadow: 1px 1px;
+}
+.details {
+        display: inline-block;
+        text-align: center;
+        position: relative;
+        top: -75px;
+        left: 70px;
+        width: 150px;
+      }
+       #header {
+            font-size: 18px;
+        }
+        #description {
+            font-size: 15px;
+        }
+        #price {
+            font-size: 15px;
+        }
+#btn1{
+    grid-area: btn1;
+}
+#btn2{
+    grid-area: btn2;
+}
+#btn3{
+    grid-area: btn3;
+}
+#btn4{
+    grid-area: btn4;
+}
+#btn5{
+    grid-area: btn5;
+}
+#btn6{
+    grid-area: btn6;
+}
+#btn7{
+    grid-area: btn7;
+}
+#btn8{
+    grid-area: btn8;
+}
+#btn9{
+    grid-area: btn9;
+}
+
+#product1 {
+    grid-area: main1;
+    background:  url(/products/media/product1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#product2 {
+    grid-area: main2;
+    background: url(/products/media/product2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+#product3 {
+    grid-area: main3;
+    background: url(/products/media/product3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#product4 {
+    grid-area: main4;
+    background: url(/products/media/product4.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#product5 {
+    grid-area: main5;
+    background: url(/products/media/product5.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#product6 {
+    grid-area: main6;
+    background: url(/products/media/product6.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#product7 {
+    grid-area: main7;
+    background: url(/products/media/product7.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#product8 {
+    grid-area: main8;
+    background: url(/products/media/product8.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#product9 {
+    grid-area: main9;
+    background: url(/products/media/product9.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#p1Info {
+    grid-area: main1;
+}
+#p2Info {
+    grid-area: main2;
+}
+#p3Info {
+    grid-area: main3;
+}
+#p4Info {
+    grid-area: main4;
+}
+#p5Info {
+    grid-area: main5;
+}
+#p6Info {
+    grid-area: main6;
+}
+#p7Info {
+    grid-area: main7;
+}
+#p8Info {
+    grid-area: main8;
+}
+#p9Info {
+    grid-area: main9;
+}
+
+@media(max-width:700px){
+    #GridContainer{
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
+        grid-template-rows: 13% 13% 13% 13% 13% 13% 13% 13% 13% 13% 13% 13% 13% 13% 13% 13% 13% 13% 13%;
+        grid-template-areas:
+        'main1'
+        'btn1'
+        'main2'
+        'btn2'
+        'main3'
+        'btn3'
+        'main4'
+        'btn4'
+        'main5'
+        'btn5'
+        'main6'
+        'btn6'
+        'main7'
+        'btn7'
+        'main8'
+        'btn8'
+        'main9'
+        'btn9';
+        height: 430px;
+        width: 99%;
+
+   }
+   .Products{
+    height: 80px;
+    width: 120px;
+    margin: 20px;
+    padding: 80px;
+
+}
+.buttons{
+    left: 60px;
+    height: 25px;
+    width: 150px;
+    margin: 85px;
+
+}
+.ProductInfo {
+    height: 80px;
+    width: 120px;
+    margin: 20px;
+    padding: 80px;
+}
+}
+
+
+
+

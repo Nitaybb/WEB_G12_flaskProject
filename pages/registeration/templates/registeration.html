@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    הרשמה
+{% endblock %}
+
+{% block body %}
+    {% set page_name = 'הרשמה לאתר' %}
+    <h1> {{ page_name }}</h1>
+
+<div class="container" onload>
+    <form action="action_page.php">
+        <div class="container">
+          <p>אנא מלא את פרטייך האישיים על מנת להירשם</p>
+          <hr>
+
+          <label for="FirstNameRe"><b>שם פרטי:</b></label>
+          <input type="text" placeholder="הכנס שם פרטי" name="FirstNameRe" id="FirstNameRe" required><br>
+
+          <label for="LastNameRe"><b>שם משפחה:</b></label>
+          <input type="text" placeholder="הכנס שם משפחה" name="LastName" id="LastNameRe" required><br>
+
+          <label for="PhoneNumber"><b>מספר טלפון:</b></label>
+          <input type="text" placeholder="הכנס מספר טלפון" name="phoneNumber" id="phoneNumberRe" required>
+
+          <label for="Email"><b>אימייל:</b></label>
+          <input type="email" placeholder="הכנס אימייל" name="Email" id="EmailRe" required>
+
+          <h5>מין:</h5>
+          <select class="GendarSelectRe" aria-label="GendarSelectRe">
+            <option value="זכר">זכר</option>
+            <option value="נקבה">נקבה</option>
+            <option value="אחר">אחר</option>
+          </select><br>
+
+          <hr>
+
+          <button type="submit" class="registerbtn">הירשם\י</button>
+        </div>
+
+        <div class="container signin">
+          <p>משתמש כבר רשום?<a href="/login">התחבר</a>.</p>
+        </div>
+      </form>
+    </div>
+
+
+    <script id="replace_with_navbar" src="fixed-navigation-bar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    {{ super() }}
+{% endblock %}
+
+{% block footer %}
+    {{ super() }}
+{% endblock %}

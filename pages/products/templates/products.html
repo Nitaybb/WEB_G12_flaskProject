@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    מוצרים
+{% endblock %}
+
+{% block page_head_css %}
+    <link rel="stylesheet" href="{{ url_for('products.static', filename='css/products.css') }}"/>
+{% endblock %}
+
+{% block body %}
+    <script src="/products/js/products.js"></script>
+<h1 >המוצרים שלנו</h1>
+    <div id="GridContainer">
+        <div id="product1" class="Products" style="display: block"></div>
+        <button id="btn1" type="button" class="buttons" onclick="hideOrShow('p1Info', 'product1')"><b>פרטי המוצר</b></button>
+        <div id="p1Info" class="ProductInfo" style="display: none;">
+            <p1 id="header" class="details"><b>מסכת קרטין</b></p1><br><p>
+            <p2 id="description" class="details">לשיער שעבר החלקה</p2><p>
+            <p3 id="price" class="details"><b>39.99₪</b></p3></div>
+        <div id="product2" class="Products" style="display: block"></div>
+        <button id="btn2" type="button" class="buttons" onclick="hideOrShow('p2Info', 'product2')"><b>פרטי המוצר</b></button>
+        <div id="p2Info" class="ProductInfo" style="display: none;">
+            <p1 id="header" class="details"><b>ערכה לעיצוב הזקן</b></p1><br><p>
+            <p2 id="description" class="details">כל מה שגבר צריך כדי לעצב לעצמו זקן רך ויציב</p2><p>
+            <p3 id="price" class="details"><b>179.99₪</b></p3></div>
+        <div id="product3" class="Products" style="display: block"></div>
+        <button id="btn3" type="button" class="buttons" onclick="hideOrShow('p3Info', 'product3')"><b>פרטי המוצר</b></button>
+        <div id="p3Info" class="ProductInfo" style="display: none;">
+            <p1 id="header" class="details"><b>שמן עיצוב לשפם</b></p1><br><p>
+            <p2 id="description" class="details">לטיפוח ועיצוב השפם</p2><p>
+            <p3 id="price" class="details"><b>49.99₪</b></p3></div>
+        <div id="product4" class="Products" style="display: block"></div>
+        <button id="btn4" type="button" class="buttons" onclick="hideOrShow('p4Info', 'product4')"><b>פרטי המוצר</b></button>
+        <div id="p4Info" class="ProductInfo" style="display: none;">
+            <p1 id="header" class="details"><b>מארז לטיפוח השיער</b></p1><br><p>
+            <p2 id="description" class="details">מארז הכולל שמפו, מסיכה, שמן ומברשת</p2><p>
+            <p3 id="price" class="details"><b>199.99₪</b></p3></div>
+        <div id="product5" class="Products" style="display: block"></div>
+        <button id="btn5" type="button" class="buttons" onclick="hideOrShow('p5Info', 'product5')"><b>פרטי המוצר</b></button>
+        <div id="p5Info" class="ProductInfo" style="display: none;">
+            <p1 id="header" class="details"><b>קרם צובע שיער לגבר</b></p1><br>
+            <p2 id="description" class="details">קרם לחות מעצב המעניק גוון שחור</p2><p>
+            <p3 id="price" class="details"><b>79.99₪</b></p3></div>
+        <div id="product6" class="Products" style="display: block"></div>
+        <button id="btn6" type="button" class="buttons" onclick="hideOrShow('p6Info', 'product6')"><b>פרטי המוצר</b></button>
+        <div id="p6Info" class="ProductInfo" style="display: none;">
+            <p1 id="header" class="details"><b>חימר עיצוב לגבר</b></p1><br><p>
+            <p2 id="description" class="details"> בעל אחיזה גמישה ויכולת עיצוב מתמשכת</p2><p>
+            <p3 id="price" class="details"><b>69.99₪</b></p3></div>
+        <div id="product7" class="Products" style="display: block"></div>
+        <button id="btn7" type="button" class="buttons" onclick="hideOrShow('p7Info', 'product7')"><b>פרטי המוצר</b></button>
+        <div id="p7Info" class="ProductInfo" style="display: none;">
+            <p1 id="header" class="details"><b>גלייז לשיער</b></p1><br><p>
+            <p2 id="description" class="details"> גלייז מקצועי לעיצוב תלתלים מושלמים ברגע</p2><p>
+            <p3 id="price" class="details"><b>49.99₪</b></p3></div>
+        <div id="product8" class="Products" style="display: block"></div>
+        <button id="btn8" type="button" class="buttons" onclick="hideOrShow('p8Info', 'product8')"><b>פרטי המוצר</b></button>
+        <div id="p8Info" class="ProductInfo" style="display: none;">
+            <p1 id="header" class="details"><b>מוס לנפח התלתלים</b></p1><br><p>
+            <p2 id="description" class="details"> מאפשר עיצוב שיער מושלם למראה טבעי ורענן</p2><p>
+            <p3 id="price" class="details"><b>54.99₪</b></p3></div>
+        <div id="product9" class="Products" style="display: block"></div>
+        <button id="btn9" type="button" class="buttons" onclick="hideOrShow('p9Info', 'product9')"><b>פרטי המוצר</b></button>
+        <div id="p9Info" class="ProductInfo" style="display: none;">
+            <p1 id="header" class="details"><b>כדורי אבץ למניעת נשירה</b></p1><br><p>
+            <p2 id="description" class="details">טבליות לשיער בריא ושופע</p2><p>
+            <p3 id="price" class="details"><b>99.99₪</b></p3></div>
+    </div>
+ {{ super() }}
+{% endblock %}
+
+{% block footer %}
+    {{ super() }}
+{% endblock %}

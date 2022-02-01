@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title %}
+אודות
+{% endblock %}
+
+{% block body %}
+    {% block page_head_css %}
+    <link rel="stylesheet" href="{{ url_for('about.static', filename='css/about.css') }}"/>
+    {% endblock %}
+
+{% set page_name = 'אודות המספרה' %}
+<div class="about-section">
+    <div class="inner-container">
+        <h1>אודות המספרה</h1>
+        <p class="text">
+            המספרה של דודי זו מספרת בוטיק רבת שנים אשר מציעה את כל טיפולי השיער: תספורת, צביעה על כלל סוגיה, החלקות ועוד. לכל סוגי השיער בהתאמה אישית ומקצועית לפי רצון וחלום הלקוח והלקוחה. בנוסף מתמחים בתסרוקות כלה והפקות אופנה.
+
+            אצלנו תמצאו יחס אישי, חם וביתי לצד אוירה אורבנית באזור הכי מרכזי בתל אביב סמוך לכיכר הבימה.
+
+            דודי הינו מעצב שיער כבר מעל 20 שנים ובעל שם דבר בקהילת הספרים בארץ.
+            לצידו עובדים אלה ויוסי בעלי התמחות בצביעה ובעיצוב שיער.
+        </p>
+        <div class="skills">
+            <span></span>
+            <span></span>
+            <span>נשמח לראותכם</span>
+        </div>
+    </div>
+</div>
+
+{{ super() }}
+{% endblock %}
+
+{% block footer %}
+{{ super() }}
+{% endblock %}

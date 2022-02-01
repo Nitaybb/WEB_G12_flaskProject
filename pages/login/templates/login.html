@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    התחברות
+{% endblock %}
+
+{% block body %}
+    {% block page_head_css %}
+    <link rel="stylesheet" href="{{ url_for('login.static', filename='css/login.css') }}"/>
+    {% endblock %}
+
+
+<div class="container" onload>
+    <form action="action_page.php">
+        <div class="container">
+          <p>אנא מלא טלפון ואימייל על מנת להתחבר</p>
+          <hr>
+
+          <label for="PhoneNumber"><b>מספר טלפון:</b></label>
+          <input type="text" placeholder="הכנס מספר טלפון" name="phoneNumber" id="phoneNumberRe" required>
+
+          <label for="Email"><b>אימייל:</b></label>
+          <input type="email" placeholder="הכנס אימייל" name="Email" id="EmailRe" required>
+
+          <hr>
+
+          <button type="submit" class="registerbtn">התחבר\י</button>
+        </div>
+
+        <div class="container signin">
+          <p>עוד לא נרשמת?<a href="/registeration">הירשם\י</a>.</p>
+        </div>
+      </form>
+
+    </div>
+
+
+    <script id="replace_with_navbar" src="fixed-navigation-bar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    {{ super() }}
+{% endblock %}
+
+{% block footer %}
+    {{ super() }}
+{% endblock %}
