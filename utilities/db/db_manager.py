@@ -67,3 +67,6 @@ class DBManager:
 
 # Creates an instance for the DBManager class for export.
 dbManager = DBManager()
+
+
+

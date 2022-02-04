@@ -9,7 +9,7 @@
     <h1> {{ page_name }}</h1>
 
 <div class="container" onload>
-    <form action="action_page.php">
+    <form action="/insert_new_user" method="POST">
         <div class="container">
           <p>אנא מלא את פרטייך האישיים על מנת להירשם</p>
           <hr>
@@ -18,13 +18,13 @@
           <input type="text" placeholder="הכנס שם פרטי" name="FirstNameRe" id="FirstNameRe" required><br>
 
           <label for="LastNameRe"><b>שם משפחה:</b></label>
-          <input type="text" placeholder="הכנס שם משפחה" name="LastName" id="LastNameRe" required><br>
+          <input type="text" placeholder="הכנס שם משפחה" name="LastNameRe" id="LastNameRe" required><br>
 
           <label for="PhoneNumber"><b>מספר טלפון:</b></label>
-          <input type="text" placeholder="הכנס מספר טלפון" name="phoneNumber" id="phoneNumberRe" required>
+          <input type="text" placeholder="הכנס מספר טלפון" name="phoneNumberRe" id="phoneNumberRe" required>
 
           <label for="Email"><b>אימייל:</b></label>
-          <input type="email" placeholder="הכנס אימייל" name="Email" id="EmailRe" required>
+          <input type="email" placeholder="הכנס אימייל" name="EmailRe" id="EmailRe" required>
 
           <h5>מין:</h5>
           <select class="GendarSelectRe" aria-label="GendarSelectRe">
@@ -35,11 +35,11 @@
 
           <hr>
 
-          <button type="submit" class="registerbtn">הירשם\י</button>
+          <input type="submit" value="הירשם\י" class="registerbtn"></input>
         </div>
 
         <div class="container signin">
-          <p>משתמש כבר רשום?<a href="/login">התחבר</a>.</p>
+          <p>משתמש כבר רשום?<a href="/login">התחבר/י</a>.</p>
         </div>
       </form>
     </div>
