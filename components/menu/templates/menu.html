@@ -23,6 +23,7 @@
                 <li><a href="/contact_us">צור קשר</a></li>
                 <li><a href="/registeration">הרשמה</a></li>
                 <li><a href="/reviews">ביקורות</a></li>
+                {% if session.username %} <a href="/logout">Log Out</a> {% else %}  <a href="/login">Log In</a> {% endif %}
                 <li id="login_menu_btn" ><a href="/login">התחברות</a></li>
             </ul>
         </div>

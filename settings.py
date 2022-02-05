@@ -7,8 +7,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # DB base configuration from .env for modularity and security reasons
 DB = {
-    'host' : os.environ.get('localhost'),
+    'host': os.environ.get('localhost'),
     'user': os.environ.get('root'),
-    'password': os.environ.get('Nitay12345'),
+    'passwd': os.environ.get('Nitay12345'),
     'database': os.environ.get('web-project-g12')
 }

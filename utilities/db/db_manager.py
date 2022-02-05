@@ -40,7 +40,10 @@ class DBManager:
         # Opens a connection to the database.
         try:
             if not self.__connection or not self.__connection.is_connected():
-                self.__connection = mysql.connector.connect(**DB)
+                self.__connection = mysql.connector.connect(host='localhost',
+                                                            user='root',
+                                                            passwd='Nitay12345',
+                                                            database='web-project-g12')
                 self.__cursor = self.__connection.cursor(named_tuple=True)
         except mysql.connector.Error as error:
             print("Connection failed with error {}".format(error))
@@ -67,6 +70,5 @@ class DBManager:
 
 # Creates an instance for the DBManager class for export.
 dbManager = DBManager()
-
 
 
