@@ -38,14 +38,14 @@
         <label for="rate-2" class="fas fa-star"></label>
         <input type="radio" name="rate" id="rate-1">
         <label for="rate-1" class="fas fa-star"></label>
-        <form action="#">
+        <form action="/request" method="post">
             <header>  </header>
             <div>
                 <label id="lab">שם:</label>
-                <textarea id="inputName"> </textarea>
+                <textarea name="inputName" id="inputName"> </textarea>
             </div>
             <div class="textarea" id="comment">
-                <textarea cols="30" placeholder="רשום תגובתך..."></textarea>
+                <textarea name="Comment" id="Comment" cols="30" placeholder="רשום תגובתך..."></textarea>
             </div>
             <div class="btn">
                 <button type="sumbit">הגב</button>
