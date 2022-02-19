@@ -42,7 +42,7 @@ class DBManager:
             if not self.__connection or not self.__connection.is_connected():
                 self.__connection = mysql.connector.connect(host='localhost',
                                                             user='root',
-                                                            passwd='Nitay12345',
+                                                            passwd='root',
                                                             database='web-project-g12')
                 self.__cursor = self.__connection.cursor(named_tuple=True)
         except mysql.connector.Error as error:

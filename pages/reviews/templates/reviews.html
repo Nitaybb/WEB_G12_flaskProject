@@ -27,19 +27,21 @@
         <div class="text">תודה על תגובתך!</div>
         <div class="edit">ערוך</div>
     </div>
-    <div class="star-widget" id="rate">
-        <input type="radio" name="rate" id="rate-5">
-        <label for="rate-5" class="fas fa-star"></label>
-        <input type="radio" name="rate" id="rate-4">
-        <label for="rate-4" class="fas fa-star"></label>
-        <input type="radio" name="rate" id="rate-3">
-        <label for="rate-3" class="fas fa-star"></label>
-        <input type="radio" name="rate" id="rate-2">
-        <label for="rate-2" class="fas fa-star"></label>
-        <input type="radio" name="rate" id="rate-1">
-        <label for="rate-1" class="fas fa-star"></label>
-        <form action="/request" method="post">
-            <header>  </header>
+
+        <form action="/request" method="POST">
+            <div class="star-widget" id="rate">
+                <input type="radio" name="rate" value="5" id="rate-5">
+                <label for="rate-5" class="fas fa-star"></label>
+                <input type="radio" name="rate"  value="4" id="rate-4">
+                <label for="rate-4" class="fas fa-star"></label>
+                <input type="radio" name="rate" value="3" id="rate-3">
+                <label for="rate-3" class="fas fa-star"></label>
+                <input type="radio" name="rate" value="2" id="rate-2">
+                <label for="rate-2" class="fas fa-star"></label>
+                <input type="radio" name="rate" value="1" id="rate-1">
+                <label for="rate-1" class="fas fa-star"></label>
+                <header></header>
+            </div>
             <div>
                 <label id="lab">שם:</label>
                 <textarea name="inputName" id="inputName"> </textarea>
@@ -48,160 +50,49 @@
                 <textarea name="Comment" id="Comment" cols="30" placeholder="רשום תגובתך..."></textarea>
             </div>
             <div class="btn">
-                <button type="sumbit">הגב</button>
+                <input type="submit" value="הגב" />
             </div>
         </form>
 
-    </div>
+
 </div>
 
 <section id="testimonials">
     <div class="testimonial-heading">
         <h1>לקוחות כותבים</h1>
     </div>
-    <!-- review1 -->
-    <div class="testimonial-box-container">
-        <div class="testimonial-box">
-            <div class="box-top">
-                <div class="profile">
-                    <div class="profile-img">
-                        <img src="/reviews/media/picforreview.png" />
-                    </div>
-                    <div class="name-user">
-                        <strong>בר חדד</strong>
-                    </div>
-                </div>
-                <div class="reviews">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-            </div>
-            <div class="client-comment">
-                <p>אני מגיעה מחדרה בשביל להסתפר אצל דודי!!! ספר מספר 1 בארץ</p>
-            </div>
-        </div>
-        <!-- review2 -->
-        <div class="testimonial-box">
-            <div class="box-top">
-                <div class="profile">
-                    <div class="profile-img">
-                       <img src="/reviews/media/picforreview.png" />
-                    </div>
-                    <div class="name-user">
-                        <strong>איתי בן שאול</strong>
-                        <!--<span>@barrefaeli</span>-->
-                    </div>
-                </div>
-                <div class="reviews">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i> <!--כוכב ריק-->
-                </div>
-            </div>
-            <div class="client-comment">
-                <p>תודה רבה על שירות אדיב! אין ספק שאחזור שוב </p>
-            </div>
-        </div>
-        <!-- review3-->
-        <div class="testimonial-box">
-            <div class="box-top">
-                <div class="profile">
-                    <div class="profile-img">
-                        <img src="/reviews/media/picforreview.png" />
-                    </div>
-                    <div class="name-user">
-                        <strong>איריס בר נתן</strong>
-                        <!--<span>@barrefaeli</span>-->
-                    </div>
-                </div>
-                <div class="reviews">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i> <!--כוכב ריק-->
-                </div>
-            </div>
-            <div class="client-comment">
-                <p>ספר תותח! צובעת ומסתפרת רק אצלו</p>
-            </div>
-        </div>
-        <!-- review4 -->
-        <div class="testimonial-box">
-            <div class="box-top">
-                <div class="profile">
-                    <div class="profile-img">
-                        <img src="/reviews/media/picforreview.png" />
-                    </div>
-                    <div class="name-user">
-                        <strong>נתנאל אדרי</strong>
-                    </div>
-                </div>
-                <div class="reviews">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i> <!--כוכב ריק-->
-                    <i class="far fa-star"></i>
-                </div>
-            </div>
-            <div class="client-comment">
-                <p>ספר מעולה ויחס אישי </p>
-            </div>
-        </div>
-        <!-- review5 -->
-        <div class="testimonial-box">
-            <div class="box-top">
-                <div class="profile">
-                    <div class="profile-img">
-                        <img src="/reviews/media/picforreview.png" />
-                    </div>
-                    <div class="name-user">
-                        <strong> נוגה שמעוני</strong>
-                    </div>
-                </div>
-                <div class="reviews">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-            </div>
-            <div class="client-comment">
-                <p>ספר אלוף! תמיד יוצאת הכי מרוצה שיש</p>
-            </div>
-        </div>
-        <!-- review6 -->
-        <div class="testimonial-box">
-            <div class="box-top">
-                <div class="profile">
-                    <div class="profile-img">
-                       <img src="/reviews/media/picforreview.png" />
-                    </div>
-                    <div class="name-user">
-                        <strong>אסף כהן</strong>
-                        <!--<span>@barrefaeli</span>-->
-                    </div>
-                </div>
-                <div class="reviews">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i> <!--כוכב ריק-->
-                    <i class="far fa-star"></i> <!--כוכב ריק-->
-                </div>
-            </div>
-            <div class="client-comment">
-                <p>שירות נחמד וספר מיקצועי!</p>
-            </div>
-        </div>
+    {% if reviews|length == 0 %}
+    <div class="no-found">
+        לא נמצאו תוצאות
     </div>
+    {% endif%}
+    {% if reviews|length  > 0 %}
+    <div class="testimonial-box-container">
+        {% for review in reviews %}
+        <div class="testimonial-box">
+            <div class="box-top">
+                <div class="profile">
+                    <div class="profile-img">
+                        <img src="/reviews/media/picforreview.png" />
+                    </div>
+                    <div class="name-user">
+                        <strong>{{ review.name }}</strong>
+                    </div>
+                </div>
+                <div class="reviews">
+                    {% for star in range(review.stars_rate) %}
+                    <i class="fas fa-star"></i>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="client-comment">
+                <p>{{ review.comment }}</p>
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+    {% endif %}
 </section>
 <script src="/reviews/js/reviews.js"></script>
 <script src="http://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>

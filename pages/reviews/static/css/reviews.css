@@ -44,6 +44,11 @@ body{
     display: none;
 
 }
+
+.star-widget{
+    overflow:hidden;
+}
+
 .star-widget label{
     font-size: 40px;
     color: #444;
@@ -66,36 +71,38 @@ input#rate-5:checked ~ label{
     text-shadow: 0 0 20px #952;
 }
 
-#rate-1:checked ~ form header:before{
+#rate-1:checked ~ header:before{
     content: "בכלל לא מרוצה";
     position: relative;
 
 }
-#rate-2:checked ~ form header:before{
+#rate-2:checked ~ header:before{
     content: " לא מרוצה";
     position: relative;
 }
-#rate-3:checked ~ form header:before{
+#rate-3:checked ~ header:before{
     content: "נטרלי";
     position: relative;
 }
-#rate-4:checked ~ form header:before{
+#rate-4:checked ~ header:before{
     content: "מרוצה  ";
     position: relative;
 
 }
-#rate-5:checked ~ form header:before{
+#rate-5:checked ~ header:before{
     content: "ממש מרוצה!";
     position: relative;
 }
+/*
 .container form{
     display: none;
 }
+
 input:checked ~ form{
     display: block;
-}
+}*/
 
-form header{
+ header{
     width: 100%;
     font-size: 25px;
     color: #fe7;
@@ -143,7 +150,7 @@ form .btn{
     margin: 15px 0;
 }
 
-form .btn button{
+form .btn button, form .btn input{
     height: 100%;
     width: 100%;
     border: 1px solid #111;
@@ -289,4 +296,8 @@ a{
     .reviews{
         margin-top: 10px;
     }
+}
+
+.no-found {
+    margin:4rem;
 }
